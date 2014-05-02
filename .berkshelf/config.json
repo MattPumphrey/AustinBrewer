@@ -1,0 +1,16 @@
+{
+  "chef": {
+    "chef_server_url": "https://api.opscode.com/organizations/pups",
+    "validation_client_name": "pups-validator",
+    "validation_key_path": ".chef/pups-validator.pem",
+    "client_key": ".chef/mpumphrey.pem",
+    "node_name": "mpumphrey"
+  },
+  "vagrant": {
+    "vm": {
+      "box": "opscode-ubuntu-12.04-i386",
+      "box_url": "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box",
+      "provision": "chef_client"
+    }
+  }
+}
